@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/uriel-problem/static/css/main.eafcffaf.css",
+    "main.js": "/uriel-problem/static/js/main.3855d579.js",
+    "index.html": "/uriel-problem/index.html",
+    "main.eafcffaf.css.map": "/uriel-problem/static/css/main.eafcffaf.css.map",
+    "main.3855d579.js.map": "/uriel-problem/static/js/main.3855d579.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eafcffaf.css",
+    "static/js/main.3855d579.js"
+  ]
+}
