@@ -1,0 +1,36 @@
+.simulator {
+  padding-top: 40px;
+
+  .input_area {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+    input {
+      all: unset;
+      font-weight: 300;
+      color: #f5f4f4;
+      padding: 4px 8px;
+      height: 35px;
+      background-color: #2d2a2a;
+      border-radius: 3px;
+      text-align: center;
+
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
+
+  .solution_area {
+    margin-top: 40px;
+
+    .talk {
+      color: #e4e2e2;
+      font-weight: 300;
+    }
+  }
+}

@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import { Problem, Solutions, Tags } from "./components";
+import { Problem, Simulator, Solutions, Tags } from "./components";
 
 function App() {
   const location = useLocation();
@@ -8,6 +8,7 @@ function App() {
     "/": <Problem />,
     "/problem": <Problem />,
     "/solutions": <Solutions />,
+    "/simulator": <Simulator />,
   };
 
   const component = pathsToComponents[location.pathname] || <div></div>;
