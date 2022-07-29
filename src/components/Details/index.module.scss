@@ -1,0 +1,41 @@
+.details {
+  padding: 15px 0;
+  border: 0px solid #4f4a4a;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  margin-top: 45px;
+  --time: 0.4s;
+
+  .head {
+    color: #e4e2e2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    svg {
+      transform: rotate(0);
+      transition: transform var(--time);
+    }
+  }
+
+  .inner {
+    font-weight: 300;
+    color: #bcb8b8;
+    padding: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height var(--time), padding var(--time);
+  }
+
+  &.open {
+    .head svg {
+      transform: rotate(180deg);
+    }
+
+    .inner {
+      max-height: 130px;
+      padding: 17px 0;
+    }
+  }
+}

@@ -1,0 +1,38 @@
+.problem .talk {
+  font-weight: 300;
+  color: #a8a3a3;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.problem .talk em {
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+}
+
+.problem .btn_group {
+  margin-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.problem .btn_group a {
+  text-decoration: none;
+  padding: 9px 16px;
+  border-radius: 5px;
+}
+
+.problem .btn_group a:first-child {
+  color: #000;
+  background-color: #7dba7f;
+}
+
+.problem .btn_group a:last-child {
+  --color: #cde5ce;
+  color: var(--color);
+  border: 1px solid var(--color);
+}
+/*# sourceMappingURL=index.module.css.map */

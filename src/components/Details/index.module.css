@@ -1,0 +1,52 @@
+.details {
+  padding: 15px 0;
+  border: 0px solid #4f4a4a;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  margin-top: 45px;
+  --time: 0.4s;
+}
+
+.details .head {
+  color: #e4e2e2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.details .head svg {
+  -webkit-transform: rotate(0);
+          transform: rotate(0);
+  -webkit-transition: -webkit-transform var(--time);
+  transition: -webkit-transform var(--time);
+  transition: transform var(--time);
+  transition: transform var(--time), -webkit-transform var(--time);
+}
+
+.details .inner {
+  font-weight: 300;
+  color: #bcb8b8;
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  -webkit-transition: max-height var(--time), padding var(--time);
+  transition: max-height var(--time), padding var(--time);
+}
+
+.details.open .head svg {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.details.open .inner {
+  max-height: 130px;
+  padding: 17px 0;
+}
+/*# sourceMappingURL=index.module.css.map */

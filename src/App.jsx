@@ -1,10 +1,32 @@
 import React from "react";
+import { useLocation } from "react-router-dom";
+import { Problem, Tags } from "./components";
 
 function App() {
+  const location = useLocation();
+  const pathsToComponents = {
+    "/": <Problem />,
+    "/problem": <Problem />,
+  };
+
+  const component = pathsToComponents[location.pathname] || <div></div>;
+
   return (
-    <section className="main">
-      <h1>The Uriel Problem</h1>
-    </section>
+    <>
+      <section className="main">
+        <h1>The Uriel Problem</h1>
+        <Tags />
+        {component}
+      </section>
+      <footer>
+        <p>
+          Modeled by{" "}
+          <a href="https://trust-akpeti.com" target="_blank">
+            Akpeti Trust
+          </a>
+        </p>
+      </footer>
+    </>
   );
 }
 

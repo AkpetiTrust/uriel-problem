@@ -1,0 +1,18 @@
+.tag {
+  display: inline-block;
+  text-decoration: none;
+  padding: 6px 20px;
+  border-radius: 50px;
+  font-size: 15px;
+  color: #c9c5c5;
+  border: 1px solid #252323;
+  font-weight: 300;
+}
+
+.tag.active {
+  border: none;
+  background-color: #0f3d3e;
+  color: #e6f9f9;
+  font-weight: 400;
+}
+/*# sourceMappingURL=index.module.css.map */
