@@ -19,7 +19,7 @@ function Problem() {
       <div className={style.btn_group}>
         <Link to={"/simulator"}>Use Simulator</Link>
         <a
-          href="https://wa.me/2348145049272?text='Hey%21%20I%20want%20to%20send%20in%20my%20solution%20to%20the%20Uriel%20Problem%20in%20form%20of%20a%20PDF%2C%20or%20a%20detailed%20text.'"
+          href="https://wa.me/2348145049272?text=Hey%21%20I%20want%20to%20send%20in%20my%20solution%20to%20the%20Uriel%20Problem%20in%20form%20of%20a%20PDF%2C%20or%20a%20detailed%20text."
           target="_blank"
         >
           Send Solution
