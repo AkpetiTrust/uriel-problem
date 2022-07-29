@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { calculateValues } from "../../utils/functions";
 import Math from "../Math/Math";
 import style from "./index.module.css";
 
@@ -24,6 +25,10 @@ function Simulator() {
     setNumber(value);
   };
 
+  useEffect(() => {
+    setValues(calculateValues(Number(number)));
+  }, [number]);
+
   return (
     <div className={style.simulator}>
       <div className={style.input_area}>
@@ -38,9 +43,18 @@ function Simulator() {
         />
       </div>
       {number && (
-        <div className={style.solution_area}>
+        <section className={style.solution_area}>
           <p className={style.talk}>The values for x and y are:</p>
-        </div>
+          <div className={style.values}>
+            {values.map(({ x, y }, index) => (
+              <span key={x}>
+                ({x}, {y}){"  "}
+                {index < values.length - 1 ? "," : ""}
+                {"  "}
+              </span>
+            ))}
+          </div>
+        </section>
       )}
     </div>
   );

@@ -39,4 +39,11 @@
   color: #e4e2e2;
   font-weight: 300;
 }
+
+.simulator .solution_area .values {
+  color: #fff;
+  margin-top: 25px;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
 /*# sourceMappingURL=index.module.css.map */
